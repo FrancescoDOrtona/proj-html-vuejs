@@ -13,7 +13,10 @@ export default{
         <div class="container">
             <div class="header__top-bar">
                 <div class="header__links">
-                    <a href="#">Download app <span class="badge">IOS</span></a>
+                    <div>
+                        <a href="#">Download app</a>
+                        <span class="badge">IOS</span>
+                    </div>
                     <a href="#">Advertise with us</a>
                 </div>
                 <div class="header__socials">
@@ -67,15 +70,18 @@ export default{
 }
 
 .badge{
-    background-color: orange;
+    background-color: $orange;
     padding: 2px 4px;
     border-radius: 4px;
+    font-weight: bold;
+    margin-left: 7px;
 }
 
 .header__logo{
     display: flex;
     justify-content: center;
-    margin: 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .header__logo img{
@@ -86,6 +92,15 @@ export default{
     display: flex;
     gap: 10px;
     justify-content: space-between;
+}
+
+.navbar__items li{
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+}
+.navbar__items li:hover{
+    color: $orange;
+    border-color: $orange;
 }
     
 </style>
