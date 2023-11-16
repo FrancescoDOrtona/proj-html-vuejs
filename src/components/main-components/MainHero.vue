@@ -1,5 +1,27 @@
 <script>
-
+export default{
+    data() {
+        return {
+            foodCards: [
+                {
+                    imgSrc: '/single-post-img3-400x263.jpg',
+                    title: 'Food Corner: Top Japanese Restaurants for Sushi ',
+                    text: 'By Admin | March 25th 2019'
+                },
+                {
+                    imgSrc: '/fi-roundup-400x263.jpg',
+                    title: 'Roundup: My New Favourite Recipes For Healty Living',
+                    text: 'By Admin | March 25th 2019'
+                },
+                {
+                    imgSrc: '/fi-toasts-400x263.jpg',
+                    title: 'Why this Toast With Tea are My New Favorite',
+                    text: 'By Admin | March 25th 2019'
+                }
+            ]
+        }
+    },
+}
 </script>
 
 <template>
@@ -16,11 +38,13 @@
         </div>
         <div class="container">
             <div class="hero__journal">
-                <h3>Foodie Journal</h3>
-                <div>
-                    <img src="/single-post-img3-400x263.jpg" alt="">
-                    <h5>Food Corner</h5>
-                    <small>by...</small>
+                <h3 class="hero__journal-title">Foodie Journal</h3>
+                <div class="hero__journal-content">
+                    <div class="content__card" v-for="(foodCard, index) in foodCards">
+                        <img :src="foodCard.imgSrc" alt="">
+                        <h4>{{ foodCard.title }}</h4>
+                        <small>{{ foodCard.text }}</small>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,5 +99,37 @@
     transform: translate(-50%, -50%);
 }
 
+.hero__journal{
+    background-color: white;
+    padding: 20px;
+}
+
+.hero__journal-title{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero__journal-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.content__card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content__card h4{
+    padding: 0px 20px;
+}
+
+.content__card small{
+    color: $grey;
+    font-size: $font-size-sm;
+}
 
 </style>
