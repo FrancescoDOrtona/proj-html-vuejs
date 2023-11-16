@@ -1,5 +1,26 @@
 <script>
-
+export default{
+    data() {
+        return {
+            card: {
+                img: '/Yogurt-Nan-600x395.jpg',
+                title: 'Lunch Favourite with Salad, Naan And Beans',
+                subTitle: 'Bakery, Featured, Healty, Latest Recipes, Staff Picks',
+                text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus velit similique ducimus ex officiis repellendus deserunt, voluptatem earum. Iure a quaerat aspernatur esse molestias non quam doloremque neque voluptate numquam? Repellendus repudiandae pariatur ut quod assumenda ullam tenetur laborum obcaecati.',
+                button: 'Learn More'
+            },
+            images:['/Mixed-fruits-460x295.jpg',
+                    '/r-rachel-park-366508-unsplash-min-460x295.jpg',
+                    '/r-michelle-tsang-500721-unsplash-min-460x295.jpg',
+                    '/quick-summer-drink-460x295.jpg',
+                    '/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg',
+                    '/perfect-cosmopolitan-460x295.jpg',
+                    '/fi2x-6-460x295.jpg',
+                    'r-brooke-lark-96398-unsplash-min-460x295.jpg'
+                ]
+        }
+    },
+}
 </script>
 
 <template>
@@ -11,20 +32,22 @@
         <div class="container">
             <div class="grid">
                 <div class="card">
-                    <img src="/Yogurt-Nan-600x395.jpg" alt="">
+                    <img :src="card.img" alt="">
                     <div class="card__content">
                         <div class="card__title">
-                            <h4>Lunch Favourite with Salad, Naan And Beans</h4>
-                            <small>Bakery, Featured, Healty, Latest Recipes, Staff Picks</small>
+                            <h4>{{ card.title }}</h4>
+                            <small>{{ card.subTitle }}</small>
                         </div>
                         <div class="card__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus velit similique ducimus ex officiis repellendus deserunt, voluptatem earum. Iure a quaerat aspernatur esse molestias non quam doloremque neque voluptate numquam? Repellendus repudiandae pariatur ut quod assumenda ullam tenetur laborum obcaecati.</p>
-                            <button class="btn">Learn More</button>
+                            <p>{{ card.text }}</p>
+                            <button class="btn">{{ card.button }}</button>
                         </div>
                     </div>
                 </div>
                 <div class="img-collection">
-                    ciao
+                    <div class="grid">
+                        <img v-for="(image,index) in images" :src="image" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,11 +87,11 @@
 }
 .card__title{
     border-bottom: 2px solid lightgray;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
 
 .card__text{
-    padding-top: 20px;
+    padding-top: 35px;
 }
 
 .card__text p{
