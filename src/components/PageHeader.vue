@@ -1,5 +1,11 @@
 <script>
-
+export default{
+    data() {
+        return {
+            navbar: ['Home', 'Recipes', 'Blog', 'About', 'Contact']
+        }
+    },
+}
 </script>
 
 <template>
@@ -20,7 +26,15 @@
             <div class="header__logo">
                 <img src="/avada-food-logo.png" alt="">
             </div>
-        </div>        
+        </div> 
+        <div class="container-md">
+            <nav class="navbar">
+                <ul class="navbar__items">
+                    <li v-for="(item,index) in navbar">{{ item }}</li>
+                    <li><font-awesome-icon icon="fa-solid fa-magnifying-glass"/></li>
+                </ul>
+            </nav>           
+        </div>       
     </div>
     
 </template>
@@ -48,6 +62,10 @@
     font-size: $font-size-sm;
 }
 
+.header__socials a{
+    color: lightgrey;
+}
+
 .badge{
     background-color: orange;
     padding: 2px 4px;
@@ -62,6 +80,12 @@
 
 .header__logo img{
     width: 100px;
+}
+
+.navbar__items{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
 }
     
 </style>
