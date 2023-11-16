@@ -57,6 +57,7 @@ export default{
 
 .hero{
     position: relative;
+    margin-bottom: 40px;
 }
 .hero__img{
     max-height: 450px;
