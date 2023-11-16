@@ -103,6 +103,7 @@ export default{
     padding-bottom: 10px;
     font-weight: bold;
     font-size: 14px;
+    cursor: pointer;
 }
 .navbar__items li:hover{
     color: $orange;
