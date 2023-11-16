@@ -1,15 +1,18 @@
 <script>
 import MainHero from './main-components/MainHero.vue'
+import PopularRecipes from './main-components/PopularRecipes.vue'
 
 export default {
     components: {
-        MainHero
+        MainHero,
+        PopularRecipes,
     }
 }
 </script>
 
 <template>
     <MainHero/>
+    <PopularRecipes/>
 </template>
 
 <style lang="scss" scoped>
