@@ -69,6 +69,10 @@ export default{
     color: lightgrey;
 }
 
+.header__socials a:hover{
+    color: black;
+}
+
 .badge{
     background-color: $orange;
     padding: 2px 4px;
@@ -97,6 +101,8 @@ export default{
 .navbar__items li{
     border-bottom: 2px solid transparent;
     padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
 }
 .navbar__items li:hover{
     color: $orange;
