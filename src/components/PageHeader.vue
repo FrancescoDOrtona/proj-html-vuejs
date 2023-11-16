@@ -17,7 +17,9 @@
                     <a href="#"><font-awesome-icon icon="fa-brands fa-youtube" /></a>                   
                 </div>
             </div>
-            
+            <div class="header__logo">
+                <img src="/avada-food-logo.png" alt="">
+            </div>
         </div>        
     </div>
     
@@ -50,6 +52,16 @@
     background-color: orange;
     padding: 2px 4px;
     border-radius: 4px;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.header__logo img{
+    width: 100px;
 }
     
 </style>
