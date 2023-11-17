@@ -12,7 +12,8 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faBookOpenReader} from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faComments } from '@fortawesome/free-regular-svg-icons'
+import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTwitter, faInstagram, faYoutube, faFacebook, faMagnifyingGlass, faBookOpenReader, faChevronRight, faComments)
+library.add(faTwitter, faInstagram, faYoutube, faFacebook, faMagnifyingGlass, faBookOpenReader, faChevronRight, faComments, faEarthAmericas)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

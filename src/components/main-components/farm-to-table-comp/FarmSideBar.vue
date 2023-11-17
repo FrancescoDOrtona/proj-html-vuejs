@@ -17,7 +17,7 @@
             </div>
             <div class="imgs__guide">
                 <img src="/singapore-featured-image-400x263.jpg" alt="">
-                <button>view all city guides</button>
+                <button class="guide__button"><font-awesome-icon icon="fa-solid fa-earth-americas" /> view all city guides</button>
             </div>
         </div>
     </div>
@@ -46,5 +46,15 @@ img{
 
 .imgs__guide{
     margin: 30px 0px;
+}
+
+.guide__button{
+    background-color: $orange;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+    border-radius: 0px;
+    color: white;
 }
 </style>
