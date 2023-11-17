@@ -1,5 +1,16 @@
 <script>
-
+export default{
+    data() {
+        return {
+            carouselImg: [
+            '/Yogurt-Nan-600x395.jpg',
+            '/Mixed-fruits-600x395.jpg',
+            '/r-rachel-park-366508-unsplash-min-600x395.jpg',
+            '/r-michelle-tsang-500721-unsplash-min-600x395.jpg'
+        ]
+        }
+    },
+}
 </script>
 
 <template>
@@ -19,7 +30,9 @@
                 </div>     
             </div>
         </div>
-                      
+        <div class="grid">
+            <img v-for="(img, index) in carouselImg" :src="img" alt="">
+        </div>              
     </div>
 </template>
 
@@ -31,7 +44,8 @@
     background-color: white;
     background-position: center;
     background-size: cover;
-    min-height: 400px;
+    background-repeat: no-repeat;
+    min-height: 430px;
     display: flex;
     align-items: center;
 }
@@ -70,5 +84,10 @@
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: 0px 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 </style>
