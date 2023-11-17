@@ -81,7 +81,7 @@ export default{
 
 .grid{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     gap: 40px;
 }
     
