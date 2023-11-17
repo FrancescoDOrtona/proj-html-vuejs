@@ -103,6 +103,8 @@ export default{
 .hero__journal{
     background-color: white;
     padding: 20px;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.2);
 }
 
 .hero__journal-title{
