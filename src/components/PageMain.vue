@@ -2,12 +2,14 @@
 import MainHero from './main-components/MainHero.vue'
 import PopularRecipes from './main-components/PopularRecipes.vue'
 import CulinaryCollection from './main-components/CulinaryCollection.vue';
+import FarmToTable from './main-components/FarmToTable.vue';
 
 export default {
     components: {
         MainHero,
         PopularRecipes,
         CulinaryCollection,
+        FarmToTable,
     }
 }
 </script>
@@ -16,6 +18,7 @@ export default {
     <MainHero/>
     <PopularRecipes/>
     <CulinaryCollection/>
+    <FarmToTable/>
 </template>
 
 <style lang="scss" scoped>

@@ -9,7 +9,8 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBookOpenReader} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTwitter, faInstagram, faYoutube, faFacebook, faMagnifyingGlass)
+library.add(faTwitter, faInstagram, faYoutube, faFacebook, faMagnifyingGlass, faBookOpenReader)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
