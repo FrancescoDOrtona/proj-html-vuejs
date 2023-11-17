@@ -24,7 +24,7 @@ export default{
 </script>
 
 <template>
-    <div>
+    <div class="pop-recipes">
         <div class="container-md pop-recipes__title">
             <h3>Popular Recipes</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi quis libero saepe quae at dolorem vero voluptatum non temporibus cumque!</p>
@@ -56,6 +56,10 @@ export default{
 
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
+
+.pop-recipes{
+    margin-bottom: 40px;
+}
 
 .pop-recipes__title{
     text-align: center;
