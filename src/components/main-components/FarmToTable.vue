@@ -1,5 +1,13 @@
 <script>
+import FarmMainContent from './farm-to-table-comp/FarmMainContent.vue'
+import FarmSideBar from './farm-to-table-comp/FarmSideBar.vue'
+
 export default{
+    components: {
+        FarmMainContent,
+        FarmSideBar,
+    },
+    
     data() {
         return {
             
@@ -23,10 +31,10 @@ export default{
         </div>
         <div class="grid">
             <div class="farm__main">
-                ciao
+                <FarmMainContent/>
             </div>
             <div class="farm-sidebar">
-                ciao
+                <FarmSideBar/>
             </div>
         </div>
        </div>
@@ -70,6 +78,7 @@ export default{
 .grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 40px;
 }
     
 </style>
