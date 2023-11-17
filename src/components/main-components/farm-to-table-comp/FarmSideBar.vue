@@ -10,6 +10,7 @@
 
 <template>
     <div class="sidebar">
+        <!-- Latest recipe & City guides images -->
         <div class="sidebar__imgs">
             <div class="imgs__recipes">
                 <img class="recipes__img" src="/ad-bg.jpg" alt="">
@@ -21,9 +22,25 @@
                 <button class="guide__button"><font-awesome-icon icon="fa-solid fa-earth-americas" /> view all city guides</button>
             </div>
         </div>
+
+        <!-- Search -->
         <div class="sidebar__search">
             <input type="search" name="search" id="sidebar-search" placeholder="Search..">
         </div>
+
+        <!-- Follow us -->
+        <div class="follow">
+            <h5>Follow Us</h5>
+            <div class="follow__socials">
+                <a class="socials__icon" href="#"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+                <a class="socials__icon" href="#"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+                <a class="socials__icon" href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
+                <a class="socials__icon" href="#"><font-awesome-icon icon="fa-brands fa-youtube" /></a>
+                <a class="socials__icon" href="#"><font-awesome-icon icon="fa-brands fa-pinterest" /></a>
+            </div>
+
+        </div>
+
     </div>
 </template>
 
@@ -88,5 +105,22 @@ img{
     padding: 10px;
     border: 1px solid lightgray;
     border-radius: 5px;
+}
+
+.follow h5{
+    color: $orange;
+}
+
+.follow__socials{
+    margin: 20px 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.socials__icon{
+    padding: 3px 6px;
+    background-color: lightgray;
+    border-radius: 3px;
 }
 </style>
