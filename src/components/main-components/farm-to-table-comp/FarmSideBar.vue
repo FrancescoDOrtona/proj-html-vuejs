@@ -38,6 +38,20 @@
                 <a class="socials__icon" href="#"><font-awesome-icon icon="fa-brands fa-youtube" /></a>
                 <a class="socials__icon" href="#"><font-awesome-icon icon="fa-brands fa-pinterest" /></a>
             </div>
+        </div>
+
+        <!-- Popular & recents treads -->
+        <div class="treads">
+            <div class="treads__heading">
+                <div class="grid">
+                    <div class="heading__text bg-color-white">
+                        <h5>Popular</h5>
+                    </div>
+                    <div class="heading__text">
+                        <h5>Recent</h5>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -122,5 +136,25 @@ img{
     padding: 3px 6px;
     background-color: lightgray;
     border-radius: 3px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.treads__heading{
+    margin: 30px 0px;
+}
+
+.heading__text{
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgray;
+    padding: 10px
+}
+
+.bg-color-white{
+    background-color: white;
 }
 </style>
