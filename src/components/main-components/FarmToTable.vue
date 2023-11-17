@@ -44,6 +44,10 @@ export default{
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
 
+.farm{
+    margin-bottom: 140px;
+}
+
 .farm__title{
     display: flex;
     justify-content: space-between;

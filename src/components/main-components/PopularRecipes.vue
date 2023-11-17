@@ -58,7 +58,7 @@ export default{
 @use '../style/partials/variables' as *;
 
 .pop-recipes{
-    margin-bottom: 40px;
+    margin-bottom: 140px;
 }
 
 .pop-recipes__title{

@@ -65,7 +65,7 @@ export default{
 @use '../style/partials/variables' as *;
 
 .collection{
-    margin-bottom: 40px;
+    margin-bottom: 140px;
 }
 
 .collection__title{
