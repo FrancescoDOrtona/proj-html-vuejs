@@ -14,7 +14,10 @@ import { faBookOpenReader} from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faComments } from '@fortawesome/free-regular-svg-icons'
 import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons'
+import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTwitter, faInstagram, faYoutube, faFacebook, faMagnifyingGlass, faBookOpenReader, faChevronRight, faComments, faEarthAmericas, faPinterest)
+library.add(faTwitter, faInstagram, faYoutube, faFacebook, faMagnifyingGlass, faBookOpenReader, faChevronRight, faComments, faEarthAmericas, faPinterest, faCircleInfo, faHeart, faArrowRightFromBracket)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

@@ -78,7 +78,33 @@
                 </div>
             </div>
         </div>
-
+        <div class="tweets">
+            <div class="tweets__header">
+                <h3>Tweets <span class="header__text">by</span> <span class="header__text color-blue">@Theme_Fusion</span></h3>
+                <font-awesome-icon icon="fa-solid fa-circle-info" />
+            </div>
+            <div class="tweets_content">
+                <div class="tweets__logo">
+                    <img  src="/3a74ce3d0532b7773b174c45ca3bd05a_normal.png" alt="">
+                </div>
+                <div>
+                    <div class="tweets__header">
+                        <h5>ThemeFusion</h5>
+                        <font-awesome-icon class="color-light-grey" icon="fa-brands fa-twitter" />
+                    </div>
+                    <small class="color-blue">@Theme_Fusion</small>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis totam, alias ullam atque, quo corrupti, sunt aut vitae provident eius quidem expedita dolor dolore voluptatibus possimus ea nemo corporis reprehenderit.</p>
+                    <img class="tweets__img" src="/En2TRxLW4AEiWUN.jpeg" alt="">
+                    <div class="tweets__footer">
+                        <div class="tweets__icons">
+                            <a href=""><font-awesome-icon icon="fa-regular fa-heart" /></a>
+                            <a href=""><font-awesome-icon icon="fa-solid fa-arrow-right-from-bracket" /></a>                           
+                        </div>
+                        <p>21<span class="text-underline">h</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -192,6 +218,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 35px;
+    margin-bottom: 30px;
 }
 .card{
     display: flex;
@@ -201,5 +228,62 @@ img{
 
 .card h4{
     font-size: 14px;
+}
+
+.tweets{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.tweets__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__text{
+    font-size: 12px;
+}
+
+.tweets__logo{
+    width: 100%;
+}
+.tweets_content{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tweets__img{
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.tweets__footer{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweets__footer p{
+    font-size: $font-size-sm;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.color-blue{
+    color: blue;
+}
+
+.color-light-grey{
+    color: lightgray;
+}
+
+.tweets__icons{
+    display: flex;
+    gap: 30px;
 }
 </style>
