@@ -9,6 +9,38 @@ export default {
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus velit similique ducimus ex officiis repellendus deserunt, voluptatem earum. Iure a quaerat aspernatur esse molestias non quam doloremque neque voluptate numquam? Repellendus repudiandae pariatur ut quod assumenda ullam tenetur laborum obcaecati.',
                 link: 'Read More'
             },
+            foodCards: [
+                {
+                    imgSrc: '/fi-roundup-400x263.jpg',
+                    title: 'Roundup: My New Favourite Recipes For Healthy Living',
+                    text: 'By Admin | March 25th 2019'
+                },
+                {
+                    imgSrc: '/fi-korean-food-400x263.jpg',
+                    title: 'Meal Prep: Korean Bibimbap with Kimchi',
+                    text: 'By Admin | March 25th 2019'
+                },
+                {
+                    imgSrc: '/fi-toasts-400x263.jpg',
+                    title: 'Why this Toast With Tea are My New Favorite',
+                    text: 'By Admin | March 25th 2019'
+                },
+                {
+                    imgSrc: '/fi-street-food-400x263.jpg',
+                    title: 'Exploring Street Food in Bangkok',
+                    text: 'By Admin | March 25th 2019'
+                },
+                {
+                    imgSrc: '/fi-organic-breakfast-400x263.jpg',
+                    title: 'Organic Choices For Healthier Living',
+                    text: 'By Admin | March 25th 2019'
+                },
+                {
+                    imgSrc: '/fi-water-side-rest-400x263.jpg',
+                    title: '5 Waterside Restaurants in Instanbul for Special Events',
+                    text: 'By Admin | March 25th 2019'
+                },
+            ]
     }
 }
 }
@@ -35,6 +67,14 @@ export default {
                 </div>
             </div>
         </div>
+        <div class="posts">
+            <div class="posts__content" v-for="(foodCard, index) in foodCards">
+                <img :src="foodCard.imgSrc" alt="">
+                <h4>{{ foodCard.title }}</h4>
+                <small>{{ foodCard.text }}</small>
+            </div>
+        </div>
+        <button class="posts__btn">Load More Posts</button>
     </div>
 </template>
 
@@ -43,7 +83,7 @@ export default {
 
 .card{
     background-color: white;
-
+    margin-bottom: 40px;
 }
 
 .card__content{
@@ -72,6 +112,38 @@ export default {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.posts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.posts__content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+}
+
+.posts__content h4{
+    padding: 0px 20px;
+}
+
+.posts__content small{
+    color: $grey;
+    font-size: $font-size-sm;
+    padding-bottom: 20px;
+}
+
+.posts__btn{
+    width: 100%;
+    background-color: lightgrey;
+    border-radius: 0px;
+    margin-top: 40px;
+    text-transform: uppercase;
 }
     
 </style>
