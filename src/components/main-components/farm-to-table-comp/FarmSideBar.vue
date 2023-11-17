@@ -21,11 +21,18 @@
                 <button class="guide__button"><font-awesome-icon icon="fa-solid fa-earth-americas" /> view all city guides</button>
             </div>
         </div>
+        <div class="sidebar__search">
+            <input type="search" name="search" id="sidebar-search" placeholder="Search..">
+        </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
+
+.sidebar__imgs{
+    border-bottom: 1px solid lightgray;
+}
 
 .imgs__recipes{
     position: relative;
@@ -70,5 +77,16 @@ img{
     color: white;
     font-weight: bold;
     font-size: 14px;
+}
+
+.sidebar__search{
+    margin: 30px 0px;
+}
+
+#sidebar-search{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
 </style>
