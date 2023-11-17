@@ -16,7 +16,8 @@
                 <p class="recipes__text">View our <br> latest <br> recipes</p>
             </div>
             <div class="imgs__guide">
-                <img src="/singapore-featured-image-400x263.jpg" alt="">
+                <img class="guide__img" src="/singapore-featured-image-400x263.jpg" alt="">
+                <span class="label">City guide: Singapore</span>
                 <button class="guide__button"><font-awesome-icon icon="fa-solid fa-earth-americas" /> view all city guides</button>
             </div>
         </div>
@@ -46,6 +47,7 @@ img{
 
 .imgs__guide{
     margin: 30px 0px;
+    position: relative;
 }
 
 .guide__button{
@@ -56,5 +58,17 @@ img{
     font-size: $font-size-sm;
     border-radius: 0px;
     color: white;
+}
+
+
+.label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
 }
 </style>
