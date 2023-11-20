@@ -32,7 +32,13 @@ export default{
         <div class="container">
             <div class="grid">
                 <div class="card">
-                    <img :src="card.img" alt="">
+                    <div class="img-position">                        
+                            <img :src="card.img" alt="">                                            
+                        <div class="img-hover">
+                            <font-awesome-icon class="circle" icon="fa-solid fa-link" />
+                            <p>{{ card.title }}</p>
+                        </div>
+                    </div>
                     <div class="card__content">
                         <div class="card__title">
                             <h4>{{ card.title }}</h4>
@@ -106,5 +112,6 @@ export default{
     color: white;
     background-color: $orange;
     border-radius: 0px;
-}   
+}
+
 </style>

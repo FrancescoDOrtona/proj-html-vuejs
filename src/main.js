@@ -21,7 +21,8 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faCopyright } from '@fortawesome/free-regular-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTwitter, faInstagram, faYoutube, faFacebook, faMagnifyingGlass, faBookOpenReader, faChevronRight, faComments, faEarthAmericas, faPinterest, faCircleInfo, faHeart, faArrowRightFromBracket, faLocationDot, faPhoneFlip, faEnvelope, faCopyright)
+library.add(faTwitter, faInstagram, faYoutube, faFacebook, faMagnifyingGlass, faBookOpenReader, faChevronRight, faComments, faEarthAmericas, faPinterest, faCircleInfo, faHeart, faArrowRightFromBracket, faLocationDot, faPhoneFlip, faEnvelope, faCopyright, faLink)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

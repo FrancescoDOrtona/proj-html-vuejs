@@ -41,7 +41,14 @@ export default{
                 <h3 class="hero__journal-title">Foodie Journal</h3>
                 <div class="hero__journal-content">
                     <div class="content__card" v-for="(foodCard, index) in foodCards">
-                        <img :src="foodCard.imgSrc" alt="">
+                        <div class="img-position">
+                            <img :src="foodCard.imgSrc" alt="">
+                            <div class="img-hover">
+                                <font-awesome-icon class="circle" icon="fa-solid fa-link" />
+                                <p>{{ foodCard.title }}</p>
+                            </div>
+                        </div>
+                        
                         <h4>{{ foodCard.title }}</h4>
                         <small>{{ foodCard.text }}</small>
                     </div>

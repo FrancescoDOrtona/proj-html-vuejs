@@ -3,10 +3,22 @@ export default{
     data() {
         return {
             carouselImg: [
-            '/Yogurt-Nan-600x395.jpg',
-            '/Mixed-fruits-600x395.jpg',
-            '/r-rachel-park-366508-unsplash-min-600x395.jpg',
-            '/r-michelle-tsang-500721-unsplash-min-600x395.jpg'
+                {
+                    imgSrc:'/Yogurt-Nan-600x395.jpg',
+                    description: 'Lunch Favourite with Salad, Naan And Beans' 
+                },
+                {
+                    imgSrc:'/Mixed-fruits-600x395.jpg',
+                    description: 'Fruit Platter with Banana, Orange and Mango' 
+                },
+                {
+                    imgSrc:'/r-rachel-park-366508-unsplash-min-600x395.jpg',
+                    description: 'Breakfast Table with Waffer, Eggs and Fruits' 
+                },
+                {
+                    imgSrc:'/r-michelle-tsang-500721-unsplash-min-600x395.jpg',
+                    description: 'Cups with Cioccolate, Cream & Pistachio Ice Cream ' 
+                },
         ],
 
         pageSections: [
@@ -35,7 +47,13 @@ export default{
             </div>
         </div>
         <div class="grid">
-            <img v-for="(img, index) in carouselImg" :src="img" alt="">
+           <div class="img-position" v-for="(img,index) in carouselImg">
+            <img :src="img.imgSrc" alt="">
+            <div class="img-hover">
+                <font-awesome-icon class="circle" icon="fa-solid fa-link" />
+                <p>{{ img.description }}</p>
+            </div>
+           </div>
         </div>
         <div class="footer-summary">
             <div class="container">
