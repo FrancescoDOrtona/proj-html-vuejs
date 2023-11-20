@@ -114,5 +114,6 @@ export default{
 
 .collection__card:hover h4{
     background-color: $orange;
+    cursor: pointer;
 }
 </style>

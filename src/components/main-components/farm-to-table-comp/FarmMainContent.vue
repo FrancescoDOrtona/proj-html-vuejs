@@ -91,6 +91,8 @@ export default {
 .card{
     background-color: white;
     margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.2);
 }
 
 .card__content{
@@ -133,6 +135,8 @@ export default {
     flex-direction: column;
     gap: 15px;
     background-color: white;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.2);
 }
 
 .posts__content h4{
